@@ -1,6 +1,7 @@
 body{
-    width: 100%;
+    max-width: 100%;
     height: auto;
+     overflow:visible;
 }
 
 /*header start*/
@@ -237,7 +238,7 @@ body{
 /*Footer Start*/
 
 .footer{
-    width: 100%;
+    width:100%;
     height: 350px;
     background-color: rgb(2, 2, 34);
 }
@@ -272,3 +273,116 @@ padding: 10px;
 }
 
 /*Footer End*/
+
+
+/* Responsive CSS for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Header Section */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .header .left-head {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .header .nav .bar {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    /* Body Section */
+    .body-start {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .body-start .Start-your-Journey {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .body-start .Start-your-Journey h1 {
+        font-size: 40px;
+    }
+
+    .body-start .Start-your-Journey p {
+        font-size: 18px;
+    }
+
+    .body-start .camera img {
+        height: auto;
+    }
+
+    /* Sponser Section */
+    .sponser {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 100px;
+    }
+
+    .sponser .partner {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    /* Popular Collection */
+    .Popular-Collection {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Popular-Collection .collection {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .Popular-Collection .collection .cart {
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Featured Products */
+    .Featured-products-show {
+        grid-template-columns:1fr;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Featured-products-show .img2 img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Featured-products-show .text {
+        padding-top: 400px;
+        
+    }
+
+    .Featured-products-show .text h1 {
+        font-size: 40px;
+    }
+
+    .Featured-products-show .text p {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .Influencer-products h1 {
+        font-size: 30px;
+    }
+
+    .footer .Influencer-products h2 {
+        font-size: 16px;
+    }
+}
